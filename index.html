@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Aniversario</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="scene">
+    <div class="card" id="card">
+      <div class="card__frame">
+        <img src="tarjeta_aniversario_6.png" alt="Tarjeta de aniversario" class="card__img" />
+        <div class="card__shine" aria-hidden="true"></div>
+      </div>
+
+      <button class="gift-btn" id="giftBtn" aria-expanded="false" aria-controls="giftMenu">
+        <span class="gift-btn__icon" aria-hidden="true">🎁</span>
+        <span class="gift-btn__text">Regalito</span>
+      </button>
+
+      <nav class="gift-menu" id="giftMenu" aria-hidden="true">
+        <div class="gift-menu__inner">
+          <button class="gift-menu__close" id="giftClose" aria-label="Cerrar">✕</button>
+          <h2 class="gift-menu__title">Elige nuestro alojamiento ✨</h2>
+
+          <ul class="gift-menu__list">
+            <li>
+              <a class="stay" href="#" data-placeholder>
+                <span class="stay__emoji" aria-hidden="true">🏡</span>
+                <span class="stay__body">
+                  <span class="stay__name">Alojamiento 1</span>
+                  <span class="stay__meta">Airbnb · próximamente</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="stay" href="#" data-placeholder>
+                <span class="stay__emoji" aria-hidden="true">🌊</span>
+                <span class="stay__body">
+                  <span class="stay__name">Alojamiento 2</span>
+                  <span class="stay__meta">Booking · próximamente</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="stay" href="#" data-placeholder>
+                <span class="stay__emoji" aria-hidden="true">🌲</span>
+                <span class="stay__body">
+                  <span class="stay__name">Alojamiento 3</span>
+                  <span class="stay__meta">Airbnb · próximamente</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="stay" href="#" data-placeholder>
+                <span class="stay__emoji" aria-hidden="true">🏖️</span>
+                <span class="stay__body">
+                  <span class="stay__name">Alojamiento 4</span>
+                  <span class="stay__meta">Booking · próximamente</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hearts" aria-hidden="true"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
